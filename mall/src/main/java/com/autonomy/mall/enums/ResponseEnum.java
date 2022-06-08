@@ -46,6 +46,12 @@ public enum ResponseEnum {
 
     UPDATE_SHIPPING_SUCCESS(20, "更新地址成功"),
 
+    SHIPPING_NOT_EXIST(21, "收货地址不存在"),
+
+    CART_SELECTED_IS_EMPTY(22, "请选择商品后下单"),
+
+    PRODCT_NOT_EXIST(23, "商品不存在"),
+
     ;
 
     Integer code;

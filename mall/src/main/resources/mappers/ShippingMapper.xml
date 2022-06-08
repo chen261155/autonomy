@@ -173,4 +173,9 @@
     from mall_shipping
     where user_id = #{uid,jdbcType=INTEGER}
   </select>
+  <delete id="selectByUidAndShippingId" parameterType="map">
+    delete from mall_shipping
+    where id = #{shippingId,jdbcType=INTEGER}
+      and user_id = #{uid,jdbcType=INTEGER}
+  </delete>
 </mapper>
