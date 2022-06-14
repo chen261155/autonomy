@@ -4,11 +4,9 @@ import com.autonomy.mall.constant.MallConstant;
 import com.autonomy.mall.form.ShippingForm;
 import com.autonomy.mall.pojo.User;
 import com.autonomy.mall.service.IShippingService;
-import com.autonomy.mall.service.impl.ShippingServiceImpl;
 import com.autonomy.mall.vo.ResponseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import sun.nio.cs.ext.MacCroatian;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;

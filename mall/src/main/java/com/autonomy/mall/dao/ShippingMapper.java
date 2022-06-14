@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.List;
+import java.util.Set;
 
 public interface ShippingMapper {
     int deleteByPrimaryKey(Integer id);
@@ -24,5 +25,8 @@ public interface ShippingMapper {
     List<Shipping> selectByUid(Integer uid);
 
     Shipping selectByUidAndShippingId(@Param("uid") Integer uid, @Param("shippingId") Integer shippingId);
+
+    List<Shipping> selectByIdSet(@Param("idSet") Set<Integer> idset);
+
 
 }
