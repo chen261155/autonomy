@@ -1,0 +1,16 @@
+Spring Bean 的作用域之间有什么区别
+
+bean的作用域
+    在spring中，可以在<bean>元素的scope属性里面设置bean的作用域，以决定这个bean是单实例的还是多实例的
+
+    默认情况下，spring中为每个在IOC容器里声明的bean创建唯一一个实例，整个IOC容器范围内都能共享该实例：所有后续的getBean()调用和bean
+    引用都将返回这个唯一的bean实例，该作用域成为singleton，它是所有bean的默认作用域
+
+    singleton
+        在springIOC容器中仅存在一个bean实例，bean以单例的方式存在
+    prototype
+        每次调用getBean()时都会返回一个新的实例
+    request
+        每次HTTP请求都会创建一个新的bean，该作用域仅适用于WebApplicationContext环境
+    session
+        同一个HTTP session共享一个bean，不同的HTTP session使用不同的bean，该作用域仅适用于WebApplicationContext环境

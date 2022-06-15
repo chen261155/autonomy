@@ -26,5 +26,6 @@ public class Iteration {
             one = sum;
         }
         return sum;
+
     }
 }
